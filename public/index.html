@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гришинин — спортпит и аксессуары из Белорецка</title>
+<meta name="description" content="Онлайн-магазин Гришинин: протеин Гришинин с разными вкусами, гейнеры, аминокислоты и аксессуары. Сделано в Белорецке, автор — Гриша.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23101319'/><text x='50' y='72' font-size='62' font-family='Arial' font-weight='bold' fill='%23c6f43f' text-anchor='middle'>G</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__made">Произведено в <b>Белорецке</b></span>
+    <span class="topbar__sep">•</span>
+    <span class="topbar__author">Автор продукции — <b>Гриша</b></span>
+    <span class="topbar__sep topbar__sep--right">•</span>
+    <span class="topbar__made">Доставка по Башкортостану и РФ</span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a href="#top" class="logo">
+      <span class="logo__mark">G</span>
+      <span class="logo__text">ГРИШИНИН<small>спортпит из Белорецка</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#catalog" class="nav__link is-active" data-nav="all">Каталог</a>
+      <a href="#catalog" class="nav__link" data-nav="protein">Протеин Гришинин</a>
+      <a href="#catalog" class="nav__link" data-nav="accessory">Аксессуары</a>
+      <a href="#about" class="nav__link">О бренде</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="search">
+        <svg viewBox="0 0 24 24" class="search__ico"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="search" placeholder="Поиск: протеин, BCAA…" autocomplete="off">
+      </div>
+      <button class="icon-btn cart-btn" id="cart-open" aria-label="Открыть корзину">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2A2 2 0 0 0 9.4 17h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+        <span class="badge" id="cart-count">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Меню">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="wrap hero__in">
+      <div class="hero__left">
+        <span class="chip chip--lime">Гришинин · Белорецк</span>
+        <h1 class="hero__title">Протеин <em>Гришинин</em><br>сделано в Белорецке</h1>
+        <p class="hero__text">Собственная производственная линия в Башкортостане. Автор рецептуры — Гриша.
+          Три вкуса изолята, три — концентрата, и ни одного грамма лишнего сахара.</p>
+        <div class="hero__btns">
+          <a href="#catalog" class="btn btn--lime" id="hero-catalog">Смотреть каталог</a>
+          <a href="#catalog" class="btn btn--ghost">Все вкусы</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><b>27 г</b><span>белка в порции</span></div>
+          <div class="stat"><b>0 г</b><span>сахара</span></div>
+          <div class="stat"><b>3</b><span>вкуса изолята</span></div>
+          <div class="stat"><b>1</b><span>день доставка по городу</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="wrap features__in">
+      <div class="feature"><b>Прямо с завода</b><span>Отправляем в день заказа, без посредников</span></div>
+      <div class="feature"><b>Дешевле в 2 раза</b><span>Своё производство в Белорецке</span></div>
+      <div class="feature"><b>100% оригинал</b><span>Каждая партия от Гриши подписана</span></div>
+      <div class="feature"><b>Оплата при получении</b><span>Наличными, картой или переводом</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="catalog">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Каталог</h2>
+          <p class="section__sub" id="catalog-sub">Протеин Гришинин, аминокислоты и аксессуары</p>
+        </div>
+        <div class="sort">
+          <label for="sort">Сортировка</label>
+          <select id="sort">
+            <option value="popular">По популярности</option>
+            <option value="cheap">Сначала дешевле</option>
+            <option value="expensive">Сначала дороже</option>
+            <option value="rating">По рейтингу</option>
+            <option value="discount">По скидке</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="layout">
+        <aside class="filters" id="filters">
+          <div class="filters__block">
+            <h3>Категории</h3>
+            <div class="cats" id="cats"></div>
+          </div>
+          <div class="filters__block">
+            <h3>Цена, ₽</h3>
+            <div class="price">
+              <input type="number" id="price-min" placeholder="от" min="0">
+              <span>—</span>
+              <input type="number" id="price-max" placeholder="до" min="0">
+            </div>
+            <button class="btn btn--ghost btn--sm btn--full" id="price-apply">Применить</button>
+          </div>
+          <div class="filters__block">
+            <h3>В наличии</h3>
+            <label class="check"><input type="checkbox" id="only-stock" checked><span>Только со склада в Белорецке</span></label>
+            <label class="check"><input type="checkbox" id="only-hit"><span>Только хиты и новинки</span></label>
+          </div>
+          <button class="btn btn--lime btn--full" id="reset-filters">Сбросить фильтры</button>
+        </aside>
+
+        <div class="catalog">
+          <div class="chips-row" id="active-filters"></div>
+          <div class="grid" id="grid"></div>
+          <p class="empty" id="empty" hidden>Ничего не найдено. Попробуйте изменить фильтры или поиск.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="about">
+    <div class="wrap about">
+      <div class="about__left">
+        <span class="chip chip--lime">История</span>
+        <h2 class="section__title">Гришинин — это Гриша<br>и маленькая фабрика в Белорецке</h2>
+        <p>Всё началось с домашней кухни в Белорецке: Гриша тренировал друзей, а они растаскивали
+          его мячики — сначала по одной штуке, потом просили «ещё». Так появилась партия на 500 банок,
+          потом — цех на окраине города, где рецептуру до сих пор никто не меняет без его подписи.</p>
+        <p>Сегодня Гришинин — это собственное производство, честный состав и контроль на каждой банке.
+          Мы не фабрикуем бренд: мы делаем продукт, за который Гриша отвечает лично.</p>
+        <div class="about__facts">
+          <div class="fact"><b>2019</b><span>первая партия</span></div>
+          <div class="fact"><b>8</b><span>видов продукции</span></div>
+          <div class="fact"><b>4 800+</b><span>спортсменов в Белорецке и не только</span></div>
+        </div>
+        <a href="#catalog" class="btn btn--lime">Выбрать продукт</a>
+      </div>
+      <div class="about__right">
+        <div class="about-card">
+          <div class="about-card__face">
+            <span class="about-card__logo">G</span>
+            <h3>Гришинин</h3>
+            <p>Изолят · Концентрат · Казеин · BCAA · Гейнер</p>
+            <div class="about-card__sign">Автор — Гриша</div>
+          </div>
+        </div>
+        <div class="about__note">
+          <b>Где мы:</b> г. Белорецк, ул. Советская, 42 — забрать заказ можно лично, и Гриша сам выдаст на руки.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Нас выбирают</h2>
+          <p class="section__sub">Отзывы спортсменов и видео с производства в Белорецке</p>
+        </div>
+      </div>
+      <div class="video-grid">
+        <div class="video-slot video-slot--has-video">
+          <video class="video-slot__video" src="video-1.mp4" controls playsinline preload="metadata"></video>
+        </div>
+        <div class="video-slot video-slot--has-video">
+          <video class="video-slot__video" src="video-2.mp4" controls playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="wrap">
+      <h2 class="section__title">Контакты и доставка</h2>
+      <div class="contacts">
+        <div class="contact">
+          <h3>Магазин</h3>
+          <p>г. Белорецк, ул. Советская, 42</p>
+          <p class="muted">Ежедневно 09:00 – 21:00</p>
+          <a href="tel:+79175552417" class="link">+7 (917) 555-24-17</a>
+        </div>
+        <div class="contact">
+          <h3>Доставка</h3>
+          <p>По Белорецку — 1 день, бесплатно от 2 000 ₽</p>
+          <p class="muted">По Башкортостану — 1–2 дня, 250 ₽</p>
+          <p class="muted">По России СДЭК — 3–7 дней</p>
+        </div>
+        <div class="contact">
+          <h3>Оплата</h3>
+          <p>Наличными при получении</p>
+          <p class="muted">Картой онлайн</p>
+          <p class="muted">Счёт для организаций</p>
+        </div>
+        <div class="contact">
+          <h3>Почта</h3>
+          <a href="mailto:zakaz@grishinin.sport" class="link">zakaz@grishinin.sport</a>
+          <p class="muted">Пишите Грише напрямую — отвечает сам автор</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <span class="logo__mark">G</span>
+      <div>
+        <b>ГРИШИНИН</b>
+        <p>Спортпит и аксессуары.<br>Произведено в Белорецке, автор — Гриша.</p>
+      </div>
+    </div>
+    <div class="footer__cols">
+      <div><h4>Каталог</h4><a href="#catalog">Протеин Гришинин</a><a href="#catalog">Аксессуары</a></div>
+      <div><h4>Покупателям</h4><a href="#contacts">Доставка и оплата</a><a href="#about">О бренде</a><a href="#contacts">Контакты</a></div>
+      <div><h4>Промокод</h4><p class="footer__promo"><b>GRISHA</b> — скидка 10%</p><p class="muted">Ещё: BELORETSK — 15%, SPORT20 — 20%</p></div>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span id="year"></span> Гришинин. Все права принадлежат Грише.</span>
+    <span>Сделано с уважением к спортсменам Белорецка</span>
+  </div>
+</footer>
+
+<!-- Корзина -->
+<div class="overlay" id="overlay" hidden></div>
+
+<aside class="cart" id="cart" aria-hidden="true">
+  <header class="cart__head">
+    <h2>Корзина</h2>
+    <button class="icon-btn" id="cart-close" aria-label="Закрыть корзину">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </header>
+  <div class="cart__body" id="cart-body"></div>
+  <footer class="cart__foot">
+    <div class="promo">
+      <input type="text" id="promo" placeholder="Промокод" autocomplete="off">
+      <button class="btn btn--ghost btn--sm" id="promo-apply">Применить</button>
+    </div>
+    <p class="promo-msg" id="promo-msg"></p>
+    <div class="totals">
+      <div class="totals__row"><span>Товары</span><span id="sum-goods">0 ₽</span></div>
+      <div class="totals__row"><span>Доставка</span><span id="sum-ship">0 ₽</span></div>
+      <div class="totals__row totals__row--disc" id="disc-row" hidden><span>Скидка</span><span id="sum-disc">−0 ₽</span></div>
+      <div class="totals__row totals__row--total"><span>Итого</span><span id="sum-total">0 ₽</span></div>
+    </div>
+    <button class="btn btn--lime btn--full btn--lg" id="checkout">Оформить заказ</button>
+    <p class="cart__note">Производство: г. Белорецк · Автор: Гриша</p>
+  </footer>
+</aside>
+
+<!-- Модалка товара -->
+<div class="modal" id="product-modal" hidden>
+  <div class="modal__card" id="product-card"></div>
+</div>
+
+<!-- Модалка заказа -->
+<div class="modal" id="order-modal" hidden>
+  <div class="modal__card modal__card--order">
+    <button class="icon-btn modal__close" data-close="order-modal" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <h2 class="section__title">Оформление заказа</h2>
+    <form id="order-form" class="form" novalidate>
+      <div class="form__row">
+        <label>Имя<input type="text" name="name" required placeholder="Иван"></label>
+        <label>Телефон<input type="tel" name="phone" required placeholder="+7 (___) ___-__-__"></label>
+      </div>
+      <label>Адрес доставки<input type="text" name="addr" required placeholder="г. Белорецк, ул. ..."></label>
+      <div class="form__row">
+        <label>Способ оплаты
+          <select name="pay">
+            <option>Наличными при получении</option>
+            <option>Картой онлайн</option>
+            <option>Счёт для организации</option>
+          </select>
+        </label>
+        <label>Комментарий<input type="text" name="note" placeholder="Позвонить за час"></label>
+      </div>
+      <label class="check"><input type="checkbox" name="agree" required><span>Согласен с обработкой данных</span></label>
+      <button class="btn btn--lime btn--full btn--lg" type="submit">Подтвердить заказ</button>
+    </form>
+    <div class="success" id="success" hidden>
+      <div class="success__mark">✓</div>
+      <h3 id="success-title">Заказ принят!</h3>
+      <p id="success-text"></p>
+      <button class="btn btn--ghost" data-close="order-modal">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
