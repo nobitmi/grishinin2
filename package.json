@@ -1,0 +1,18 @@
+{
+  "name": "grishinin-shop",
+  "version": "1.0.0",
+  "description": "Онлайн-магазин спортивного питания и аксессуаров «Гришинин». Произведено в Белорецке, автор — Гриша.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js 8777",
+    "test": "node smoke-test.js",
+    "shots": "node screenshot.js"
+  },
+  "keywords": ["спортпит", "протеин", "гришинин", "белорецк", "магазин"],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jsdom": "^30.1.3",
+    "puppeteer-core": "^25.16.0"
+  }
+}
